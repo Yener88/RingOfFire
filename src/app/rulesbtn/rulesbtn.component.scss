@@ -48,6 +48,8 @@
     border: 3px solid gold;
     color: rgb(230, 230, 230);
     overflow-y: scroll;
+    z-index: 999;
+    
     &::-webkit-scrollbar {
         height: 5px;
         width: 10px;
