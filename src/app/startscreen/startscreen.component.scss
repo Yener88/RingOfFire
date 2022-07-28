@@ -16,17 +16,19 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 150px;
+    bottom: 45px;
     display: flex;
     justify-content: center;
 
     img {
-        width: 35vw;
+        width: 30vw;
         height: auto;
         cursor: pointer;
+        opacity: 0.8;
 
         &:hover {
-            filter: brightness(1.2);
+            filter: brightness(1.3);
+            opacity: 1;
         }
     }
 }

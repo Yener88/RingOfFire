@@ -27,13 +27,10 @@ export class GameCardRulesComponent implements OnInit {
   @Input() card: string;
   constructor() { }
 
-  ngOnInit(): void {
-    console.log('Current card: ', this.card)
-  }
-  
+  ngOnInit(): void { }
+
   ngOnChanges(): void {
     if (this.card) {
-      console.log('Current card is:', this.card);
       let cardNumber = +this.card.split('_')[1];
       this.title = this.cardAction[cardNumber - 1].title;
       this.description = this.cardAction[cardNumber - 1].description;
