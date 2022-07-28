@@ -7,7 +7,7 @@
         <!-- Card stack -->
         <img *ngFor="let c of [0,1,2,3,4]; let i = index;" [ngStyle]="{'right.px': i * 5}"
             src="assets/img/cards/card_cover.png">
-        <img (click)="takeCard()" class="topCard" style="right: 25px"
+        <img (click)="takeCard()" class="topCard" style="right: 25px;"
             src="assets/img/cards/card_cover.png">
 
         <!-- Stack for played cards -->
@@ -15,7 +15,7 @@
 
         <!-- Current card (Animation) -->
         <img (click)="takeCard()" *ngIf="game.pickCardAnimation"
-            class="topCard pickCard" style="right: 25px;" src="assets/img/cards/{{ game.currentCard }}.png">
+            class="pickCard" style="right: 25px;" src="assets/img/cards/{{ game.currentCard }}.png">
     </div>
 </div>
 <app-game-card-rules [card]="game.currentCard" class="pinBottom"></app-game-card-rules>

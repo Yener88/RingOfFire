@@ -15,7 +15,6 @@
     img {
         position: absolute;
         width: 120px;
-        border: 1px solid #363636;
         border-radius: 15px;
     }
 }
@@ -23,8 +22,6 @@
 .topCard {
     cursor: pointer;
     transition: all 125ms ease-in-out;
-    border: 1px solid #363636;
-    border-radius: 15px;
 
     &:hover {
         transform: scale(1.1) translateY(-10px);
