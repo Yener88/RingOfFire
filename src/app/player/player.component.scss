@@ -5,6 +5,11 @@
     width: 300px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
 
     span {
         font-size: 32px;
