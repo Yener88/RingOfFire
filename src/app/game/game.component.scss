@@ -74,3 +74,16 @@
     left: 100px;
     right: 100px;
 }
+
+.gameOver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 750px;
+        position: absolute;
+        top: 131px;
+        z-index: 99;
+    }
+}

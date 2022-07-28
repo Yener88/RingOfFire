@@ -1,6 +1,9 @@
-<app-player (click)="editPlayer(i)" *ngFor="let player of game.players; let i = index;" [ngStyle]="{'top.px': 100 + (i * 90)}"
+<app-player (click)="editPlayer(i)" *ngFor="let player of game.players; let i = index;" [ngStyle]="{'top.px': 100 + (i * 70)}"
     [playerActive]="i == game.currentPlayer" [image]="game.player_images[i]" [name]="player" class="playerPosition">
 </app-player>
+<div *ngIf="gameOver" class="gameOver">
+    <img src="./assets/img/gameover.png">
+</div>
 <div class="gameField">
 
     <div class="cardStack">
