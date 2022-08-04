@@ -9,6 +9,10 @@
     color: rgb(226, 226, 226);
     transition: 225ms ease-in-out;
 
+    @media (max-width: 720px) {
+        top: 90px;
+    }
+
     &:hover {
         transform: scale(1.2);
     }

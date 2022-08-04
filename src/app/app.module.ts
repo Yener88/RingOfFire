@@ -23,6 +23,7 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { RulesbtnComponent } from './rulesbtn/rulesbtn.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
     DialogAddPlayerComponent,
     GameCardRulesComponent,
     RulesbtnComponent,
-    EditPlayerComponent
+    EditPlayerComponent,
+    PlayerMobileComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),

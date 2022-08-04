@@ -5,5 +5,35 @@ body {
 body {
     margin: 0;
     font-family: "Source Sans Pro" !important;
+}
 
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: burlywood;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: chocolate;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: brown;
+}
+
+
+@media (max-width: 720px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+
+@media (min-width: 720px) {
+    .hide-desktop {
+        display: none !important;
+    }
 }

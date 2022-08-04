@@ -73,6 +73,13 @@
     bottom: 32px;
     left: 100px;
     right: 100px;
+    
+    @media (max-width: 720px) {
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
 }
 
 .gameOver {
@@ -85,5 +92,19 @@
         position: absolute;
         top: 131px;
         z-index: 99;
+    }
+}
+
+.scroll-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    app-player-mobile {
+        margin-left: 8px;
     }
 }
