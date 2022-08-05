@@ -44,18 +44,21 @@ export class GameComponent implements OnInit {
     });
   }
 
-/**
- * create a new Game
- */
+  /**
+   * create a new Game
+   */
   newGame() {
     this.game = new Game();
   }
 
-/**
- * this function ist for clicking on the card stack
- */
+  /**
+   * this function ist for clicking on the card stack
+   * 
+   */
   takeCard() {
-    if(this.game.stack.length == 0) {
+    if (this.game.players.length < 2) {
+      this.openDialog();
+    } else if (this.game.stack.length == 0) {
       this.gameOver = true;
     } else if (!this.game.pickCardAnimation) {
       this.game.currentCard = this.game.stack.pop();
@@ -71,11 +74,11 @@ export class GameComponent implements OnInit {
     }
   }
 
-/**
- * this funtion is used to open the edit player window
- * 
- * @param {number} playerId - the player with id which added before
- */
+  /**
+   * this funtion is used to open the edit player window
+   * 
+   * @param {number} playerId - the player with id which added before
+   */
   editPlayer(playerId: number) {
     console.log('Edit player', playerId);
 
@@ -94,9 +97,9 @@ export class GameComponent implements OnInit {
     });
   }
 
-/**
- * this function is for show the player
- */
+  /**
+   * this function is for show the player
+   */
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogAddPlayerComponent);
 
@@ -109,9 +112,9 @@ export class GameComponent implements OnInit {
     });
   }
 
-/**
- * this is the save function
- */
+  /**
+   * this is the save function
+   */
   saveGame() {
     this
       .firestore
