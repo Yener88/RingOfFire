@@ -15,10 +15,10 @@ export class StartScreenComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  /**
+   * this function start the multiplayer game with firebase realtime database 
+   */
   newGame() {
-    // start game
-
-
     let game = new Game();
     this.firestore
       .collection('games')

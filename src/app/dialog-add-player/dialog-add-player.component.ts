@@ -14,6 +14,9 @@ export class DialogAddPlayerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * this function close the edit window bei on no click
+   */
   onNoClick() {
     this.dialogRef.close();
   }

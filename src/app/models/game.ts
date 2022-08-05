@@ -31,6 +31,12 @@ export class Game {
     }
 }
 
+/**
+ * this function is a shuffle for the random card stack
+ *  
+ * @param array 
+ * @returns 
+ */
 function shuffle(array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 

@@ -11,6 +11,10 @@ export class RulesbtnComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  /**
+   * this both functions are the button for game rules
+   */
   closeRules() {
     document.getElementById('rulesText').classList.add('d-none');
     document.getElementById('rulesBtn').classList.remove('d-none');

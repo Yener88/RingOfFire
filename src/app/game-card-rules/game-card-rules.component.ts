@@ -29,6 +29,9 @@ export class GameCardRulesComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  /**
+   * Card registration
+   */
   ngOnChanges(): void {
     if (this.card) {
       let cardNumber = +this.card.split('_')[1];
